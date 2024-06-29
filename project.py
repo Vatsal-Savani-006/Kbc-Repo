@@ -30,7 +30,7 @@ if(j == 'a'):
                 steve = []
                 while True:
                     if g not in steve:
-                        steve.insert(0,g)
+                        steve.append(g)
                         break
                     else:
                         g = choice(q1)
@@ -42,6 +42,8 @@ if(j == 'a'):
                 o1[c] = o1[c].replace('.'," ")
                 engine.say(f'{o1[c]}')
                 engine.runAndWait()
+                o1[c] = o1[c].replace('A.','a.')
+                o1[c] = o1[c].replace(' ',".")
                 try:
                     k = inputimeout(prompt="Enter your answer : ",timeout = 30)
                     j = k.lower()
@@ -75,7 +77,7 @@ if(j == 'a'):
                 steve = []
                 while True:
                     if g not in steve:
-                        steve.insert(0,g)
+                        steve.append(g)
                         break
                     else:
                         g = choice(q2)
@@ -83,10 +85,12 @@ if(j == 'a'):
                 print(g)
                 engine.say(g)
                 print(f'{o2[c]}')
-                o2[c] = o2.replace('a.','A.')
+                o2[c] = o2[c].replace('a.','A.')
                 o2[c] = o2[c].replace('.'," ")
                 engine.say(f'{o2[c]}')
                 engine.runAndWait()
+                o2[c] = o2[c].replace('A.','a.')
+                o2[c] = o2[c].replace(' ',".")
                 try:
                     k = inputimeout(prompt="Enter your answer : ",timeout = 60)
                     j = k.lower()
@@ -121,7 +125,7 @@ if(j == 'a'):
                     steve = []
                     while True:
                         if g not in steve:
-                             steve.insert(0,g)
+                             steve.append(g)
                              break
                         else:
                              g = choice(q3)
@@ -133,6 +137,8 @@ if(j == 'a'):
                     o3[c] = o3[c].replace('.'," ")
                     engine.say(f'{o3[c]}')
                     engine.runAndWait()
+                    o3[c] = o3[c].replace('A.','a.')
+                    o3[c] = o3[c].replace(' ',".")
                     try:
                         k = input("Enter your answer : ")
                         j = k.lower()
